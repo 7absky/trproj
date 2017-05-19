@@ -19,6 +19,12 @@ class TreeData {
 		return $query;
 	}
 
+	public function getLabels () {
+	    $query = $this->connection->prepare("SELECT id, label FROM menus ORDER BY label");
+	    $query->execute();
+	    return $query;
+    }
+
 	public function makeCategoryArray ($query) {
 		$category = array(
 			'categories' => array(),
@@ -86,7 +92,7 @@ class TreeData {
 			"UPDATE menus 
 				SET
 					label = :label,
-					link = :link
+					parent = :parent
 				WHERE
 					id = :id"
 		);
@@ -94,7 +100,7 @@ class TreeData {
 		$data = [
 			':id' => $data['id'],
 			':label' => $data['label'],
-			':link' => $data['link']
+			':parent' => $data['parent']
 		];
 
 		return $query->execute($data);

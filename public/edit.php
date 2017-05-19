@@ -18,13 +18,16 @@
 	}
 	$data = new \Tree\TreeData();
 	$node = $data->getNode($_GET['id']);
-
+    $labels = $data->getLabels();
 	if ($node === false) {
 		echo "Node not found!";
 		exit;
 	}
 
 	$template = new \Tree\Template("../views/base.phtml");
-	$template->render("../views/index/edit.phtml", ['node'=>$node]);
+	$template->render("../views/index/edit.phtml", [
+	    'node'=>$node,
+        'labels' => $labels
+    ]);
 
 

@@ -1,5 +1,6 @@
 <?php
 $node = $this->node;
+$labels = $this->labels;
 ?>
 
 <h2> Edit node </h2>
@@ -9,7 +10,15 @@ $node = $this->node;
 	</label>
 	<br>
 	<label>
-		Link: <input type="text" name="link" value="<?=$node['link'];?>">
+		Rodzic:
+        <select name="parent">
+            <?php
+                foreach($labels as $label) {
+                   echo "<option value='".$label['id']."'>".$label['label']."</option>";
+                }
+            ?>
+            <option value="0">Kategoria główna</option>
+        </select>
 	</label>
 	<br>
 	<input type="hidden" name="id" value="<?=$node['id'];?>">
