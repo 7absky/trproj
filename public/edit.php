@@ -7,13 +7,13 @@
 			header ("Location: /treeproj/public");
 			exit;
 		} else {
-			echo "An error occurred";
+			echo "Wystąpił błąd";
 			exit;
 		}
 	}
 
 	if (!isset($_GET['id']) || empty($_GET['id'])) {
-		echo "You did not pass in and ID.";
+		echo "Nie podałeś żadnego ID.";
 		exit;
 	}
 	$data = new \Tree\TreeData();
@@ -27,4 +27,4 @@
 	$template = new \Tree\Template("../views/base.phtml");
 	$template->render("../views/index/edit.phtml", ['node'=>$node]);
 
-?>
+

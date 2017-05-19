@@ -40,10 +40,10 @@ class TreeData {
 			$html .= "<ul class='tree'>";
 			foreach ($category['parent_cats'][$parent] as $cat_id) {
 				if (!isset($category['parent_cats'][$cat_id])) {
-					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-primary' href='edit.php?id=" .$category['categories'][$cat_id]['id']."'> Edit  </a> <a class='btn btn-xs btn-danger' href='delete.php?id=" .$category['categories'][$cat_id]['id']."'> Delete  </a></label> <input type='checkbox'/></li>";
+					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-primary' href='edit.php?id=" .$category['categories'][$cat_id]['id']."'> Edit  </a> <a class='btn btn-xs btn-danger' href='delete.php?id=" .$category['categories'][$cat_id]['id']."'> Delete  </a><a class='btn btn-xs btn-info' href='details.php?id=" .$category['categories'][$cat_id]['id']."'> Details  </a></label> <input type='checkbox'/></li>";
 				}
 				if (isset($category['parent_cats'][$cat_id])) {
-					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-primary' href='edit.php?id=" .$category['categories'][$cat_id]['id']."'> Edit  </a> <a class='btn btn-xs btn-danger' href='delete.php?id=" .$category['categories'][$cat_id]['id']."'> Delete  </a></label> <input type='checkbox'/>";
+					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-primary' href='edit.php?id=" .$category['categories'][$cat_id]['id']."'> Edit  </a> <a class='btn btn-xs btn-danger' href='delete.php?id=" .$category['categories'][$cat_id]['id']."'> Delete  </a><a class='btn btn-xs btn-info' href='details.php?id=" .$category['categories'][$cat_id]['id']."'> Details  </a></label> <input type='checkbox'/>";
 					$html .= $this->buildTreeView ($cat_id, $category);
 					$html .= "</li>";
 				}
@@ -117,4 +117,13 @@ class TreeData {
 
 		return $query->execute($data);
 	}
+
+	public function showDetails ($id) {
+	    $sql = "SELECT * FROM menus WHERE id = :id LIMIT 1";
+	    $query = $this->connection->prepare($sql);
+	    $values = [':id' => $id];
+	    $query->execute($values);
+
+	    return $query->fetch(\PDO::FETCH_ASSOC);
+    }
 }
