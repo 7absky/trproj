@@ -53,3 +53,7 @@ li input:checked + ul > li {
 li input:checked + ul > li:last-child { 
 	margin: 8px 0 0.063em;
 }
+
+li.child {
+	font-size:14px;
+}

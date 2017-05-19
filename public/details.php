@@ -13,7 +13,7 @@ require '../src/Tree/Autoloader.php';
     $allNodes = $data->getAllNodes();
     $categories = $data->makeCategoryArray($allNodes);
 
-    $treeStruct = $builder->buildTreeView($nodeId,$categories);
+    $treeStruct = $builder->showChildren($nodeId,$categories);
 
     if ($node === false) {
         echo "Nie znaleziono węzła o podanym ID.";
