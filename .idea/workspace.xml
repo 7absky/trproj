@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe355af-633c-4a40-8b6d-539341946156" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/details.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index/details.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/edit.php" afterPath="$PROJECT_DIR$/public/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tree/TreeData.php" afterPath="$PROJECT_DIR$/src/Tree/TreeData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/base.phtml" afterPath="$PROJECT_DIR$/views/base.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index/edit.phtml" afterPath="$PROJECT_DIR$/views/index/edit.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,27 +16,27 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40434784">
+    <splitter split-orientation="horizontal" split-proportion="0.8583851">
       <split-first>
         <leaf>
-          <file leaf-file-name="TreeData.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="TreeData.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Tree/TreeData.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+                <state relative-caret-position="420">
+                  <caret line="45" column="253" lean-forward="false" selection-start-line="45" selection-start-column="253" selection-end-line="45" selection-end-column="253" />
                   <folding>
-                    <marker date="1495179868000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
-                    <marker date="1495179868000" expanded="true" signature="2141:2246" ph="INSERT INTO menus... " />
-                    <marker date="1495179868000" expanded="true" signature="2470:2511" ph="DELETE FROM " />
-                    <marker date="1495179868000" expanded="true" signature="2633:2675" ph="SELECT * FRO... menus" />
-                    <marker date="1495179868000" expanded="true" signature="2904:2988" ph="UPDATE menus... " />
-                    <marker date="1495179868000" expanded="true" signature="3185:3227" ph="SELECT * FRO... menus" />
+                    <marker date="1495184320000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
+                    <marker date="1495184320000" expanded="true" signature="1816:1921" ph="INSERT INTO menus... " />
+                    <marker date="1495184320000" expanded="true" signature="2145:2186" ph="DELETE FROM " />
+                    <marker date="1495184320000" expanded="true" signature="2308:2350" ph="SELECT * FRO... menus" />
+                    <marker date="1495184320000" expanded="true" signature="2579:2663" ph="UPDATE menus... " />
+                    <marker date="1495184320000" expanded="true" signature="2860:2902" ph="SELECT * FRO... menus" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="details.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="details.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/details.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="405">
@@ -126,13 +120,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tree/TreeData.php" />
         <option value="$PROJECT_DIR$/public/edit.php" />
         <option value="$PROJECT_DIR$/views/base.phtml" />
         <option value="$PROJECT_DIR$/views/index/edit.phtml" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/details.php" />
         <option value="$PROJECT_DIR$/views/index/details.phtml" />
+        <option value="$PROJECT_DIR$/src/Tree/TreeData.php" />
       </list>
     </option>
   </component>
@@ -316,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495178847690</updated>
-      <workItem from="1495178849462" duration="4905000" />
+      <workItem from="1495178849462" duration="5424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4905000" />
+    <option name="totallyTimeSpent" value="5424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1473" y="-158" width="1818" height="1008" extended-state="0" />
@@ -357,21 +351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tree/TreeData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <marker date="1495179868000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
-            <marker date="1495179868000" expanded="true" signature="2141:2246" ph="INSERT INTO menus... " />
-            <marker date="1495179868000" expanded="true" signature="2470:2511" ph="DELETE FROM " />
-            <marker date="1495179868000" expanded="true" signature="2633:2675" ph="SELECT * FRO... menus" />
-            <marker date="1495179868000" expanded="true" signature="2904:2988" ph="UPDATE menus... " />
-            <marker date="1495179868000" expanded="true" signature="3185:3227" ph="SELECT * FRO... menus" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -425,6 +404,21 @@
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/TreeData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="45" column="253" lean-forward="false" selection-start-line="45" selection-start-column="253" selection-end-line="45" selection-end-column="253" />
+          <folding>
+            <marker date="1495184320000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
+            <marker date="1495184320000" expanded="true" signature="1816:1921" ph="INSERT INTO menus... " />
+            <marker date="1495184320000" expanded="true" signature="2145:2186" ph="DELETE FROM " />
+            <marker date="1495184320000" expanded="true" signature="2308:2350" ph="SELECT * FRO... menus" />
+            <marker date="1495184320000" expanded="true" signature="2579:2663" ph="UPDATE menus... " />
+            <marker date="1495184320000" expanded="true" signature="2860:2902" ph="SELECT * FRO... menus" />
+          </folding>
         </state>
       </provider>
     </entry>
