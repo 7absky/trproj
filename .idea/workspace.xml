@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fe355af-633c-4a40-8b6d-539341946156" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tree/TreeData.php" afterPath="$PROJECT_DIR$/src/Tree/TreeData.php" />
-    </list>
+    <list default="true" id="0fe355af-633c-4a40-8b6d-539341946156" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +14,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8583851">
+    <splitter split-orientation="horizontal" split-proportion="0.4484472">
       <split-first>
         <leaf>
           <file leaf-file-name="TreeData.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Tree/TreeData.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="45" column="253" lean-forward="false" selection-start-line="45" selection-start-column="253" selection-end-line="45" selection-end-column="253" />
+                <state relative-caret-position="840">
+                  <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
                   <folding>
                     <marker date="1495184320000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
                     <marker date="1495184320000" expanded="true" signature="1816:1921" ph="INSERT INTO menus... " />
@@ -310,12 +308,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495178847690</updated>
-      <workItem from="1495178849462" duration="5424000" />
+      <workItem from="1495178849462" duration="5507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5424000" />
+    <option name="totallyTimeSpent" value="5507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1473" y="-158" width="1818" height="1008" extended-state="0" />
@@ -399,18 +397,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index/details.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/TreeData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="45" column="253" lean-forward="false" selection-start-line="45" selection-start-column="253" selection-end-line="45" selection-end-column="253" />
+        <state relative-caret-position="840">
+          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <marker date="1495184320000" expanded="true" signature="313:361" ph="SELECT * FRO... menus" />
             <marker date="1495184320000" expanded="true" signature="1816:1921" ph="INSERT INTO menus... " />
@@ -419,6 +409,14 @@
             <marker date="1495184320000" expanded="true" signature="2579:2663" ph="UPDATE menus... " />
             <marker date="1495184320000" expanded="true" signature="2860:2902" ph="SELECT * FRO... menus" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index/details.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
