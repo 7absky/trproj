@@ -21,12 +21,12 @@ li input {
 	opacity: 0;
 	z-index: 2;
 	cursor: pointer;
-	height: 1em;
-	width: 1em;
+	height: 2em;
+	width: 2em;
 	top: 0;
 }
 li input + ul {
-	background: url(images/toggle-small-expand.png) 40px 0 no-repeat;
+	background: url(images/toggle-down.png) 40px 0 no-repeat;
 	margin: -1.600em 0px 8px -44px; 
 	height: 1em;
 }
@@ -41,7 +41,7 @@ li label {
 	padding-left: 15px;
 }
 li input:checked + ul {
-	background: url(images/toggle-small.png) 40px 5px no-repeat;
+	background: url(images/toggle-up.png) 40px 5px no-repeat;
 	margin: -1.96em 0 0 -44px; 
 	padding: 1.563em 0 0 80px;
 	height: auto;
@@ -56,4 +56,9 @@ li input:checked + ul > li:last-child {
 
 li.child {
 	font-size:14px;
+}
+
+a > span.glyphicon-pencil {
+	color:#575757;
+	margin-bottom: 8px;
 }

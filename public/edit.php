@@ -4,7 +4,7 @@
 	if (isset($_POST['id']) && !empty($_POST['id'])) {
 		$data = new \Tree\TreeData();
 		if ($data->update($_POST)) {
-			header ("Location: /treeproj/public");
+			header ("Location: /ideotree/public");
 			exit;
 		} else {
 			echo "Wystąpił błąd";
