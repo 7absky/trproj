@@ -7,12 +7,13 @@ require '../src/Tree/Autoloader.php';
     }
 
     $data = new \Tree\TreeData();
+    $builder = new \Tree\TreeStructure();
     $node = $data->getNode($_GET['id']);
     $nodeId = $_GET['id'];
     $allNodes = $data->getAllNodes();
-    $categories = $data->buildCategory($allNodes);
+    $categories = $data->makeCategoryArray($allNodes);
 
-    $treeStruct = $data->buildTreeView($nodeId,$categories);
+    $treeStruct = $builder->buildTreeView($nodeId,$categories);
 
     if ($node === false) {
         echo "Nie znaleziono węzła o podanym ID.";

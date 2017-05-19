@@ -19,7 +19,7 @@ class TreeData {
 		return $query;
 	}
 
-	public function buildCategory ($query) {
+	public function makeCategoryArray ($query) {
 		$category = array(
 			'categories' => array(),
 			'parent_cats' => array()
@@ -34,24 +34,6 @@ class TreeData {
 		return $category;
 	}
 
-	public function buildTreeView ($parent, $category) {
-		$html = ""; 
-		if (isset($category['parent_cats'][$parent])) {
-			$html .= "<ul class='tree'>";
-			foreach ($category['parent_cats'][$parent] as $cat_id) {
-				if (!isset($category['parent_cats'][$cat_id])) {
-					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-default' href='details.php?id=" .$category['categories'][$cat_id]['id']."'> <span class='glyphicon glyphicon-cog' aria-hidden='true'></span></a></label> <input type='checkbox'/></li>";
-				}
-				if (isset($category['parent_cats'][$cat_id])) {
-					$html .= "<li><label>". $category['categories'][$cat_id]['label'] . "<a class='btn btn-xs btn-default' href='details.php?id=" .$category['categories'][$cat_id]['id']."'><span class='glyphicon glyphicon-cog' aria-hidden='true'></span></a></label> <input type='checkbox'/>";
-					$html .= $this->buildTreeView ($cat_id, $category);
-					$html .= "</li>";
-				}
-			}
-			$html .= "</ul>";
-		}
-		return $html;
-	}
 
 	public function add ($data) {
 		$query = $this->connection->prepare(
@@ -117,13 +99,4 @@ class TreeData {
 
 		return $query->execute($data);
 	}
-
-	public function showDetails ($id) {
-	    $sql = "SELECT * FROM menus WHERE id = :id LIMIT 1";
-	    $query = $this->connection->prepare($sql);
-	    $values = [':id' => $id];
-	    $query->execute($values);
-
-	    return $query->fetch(\PDO::FETCH_ASSOC);
-    }
 }
