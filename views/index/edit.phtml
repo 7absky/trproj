@@ -1,0 +1,18 @@
+<?php
+$node = $this->node;
+?>
+
+<h2> Edit node </h2>
+<form action="edit.php" method="POST">
+	<label>
+		Title: <input type="text" name="label" value="<?=$node['label'];?>">
+	</label>
+	<br>
+	<label>
+		Link: <input type="text" name="link" value="<?=$node['link'];?>">
+	</label>
+	<br>
+	<input type="hidden" name="id" value="<?=$node['id'];?>">
+	<input type="submit" value="Edit Node" class="btn btn-primary">
+	<a href="/treeproj/public" role="button" class="btn btn-warning">Powrót</a>
+</form>

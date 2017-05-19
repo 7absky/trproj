@@ -1,0 +1,55 @@
+/* CSS Tree menu styles */
+ul.tree {
+	padding: 0 0 0 30px;
+	width: 500px;
+}
+li { 
+	position: relative; 
+	margin: 10px 0 10px -15px;
+	list-style: none;
+	font-size: 16px;
+}   
+
+li .btn {
+	margin-left:5px;
+}
+
+li input {
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+li input + ul {
+	background: url(images/toggle-small-expand.png) 40px 0 no-repeat;
+	margin: -1.600em 0px 8px -44px; 
+	height: 1em;
+}
+li input + ul > li { 
+	display: none; 
+	margin-left: -14px !important; 
+	padding-left: 1px; 
+}
+li label {
+	cursor: pointer;
+	display: block;
+	padding-left: 15px;
+}
+li input:checked + ul {
+	background: url(images/toggle-small.png) 40px 5px no-repeat;
+	margin: -1.96em 0 0 -44px; 
+	padding: 1.563em 0 0 80px;
+	height: auto;
+}
+li input:checked + ul > li { 
+	display: block; 
+	margin: 8px 0px 0px 0.125em;
+}
+li input:checked + ul > li:last-child { 
+	margin: 8px 0 0.063em;
+}
