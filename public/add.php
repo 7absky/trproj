@@ -8,6 +8,11 @@ if (isset($_POST) && sizeof($_POST) > 0) {
 	exit;
 }
 
+
+$labelsData = new \Tree\TreeData();
+$labels = $labelsData->getLabels();
 $template = new \Tree\Template("../views/base.phtml");
-$template->render("../views/index/add.phtml");
+$template->render("../views/index/add.phtml",[
+	'labels' => $labels
+]);
 ?>

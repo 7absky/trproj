@@ -45,19 +45,16 @@ class TreeData {
 		$query = $this->connection->prepare(
 			"INSERT INTO menus (
 				label,
-				parent,
-				link
+				parent
 			) VALUES (
 				:label,
-				:parent,
-				:link
-			)"	
+				:parent
+			)"
 		);
 
 		$data = [
 			':label' => $data['label'],
-			':parent' => $data['parent'],
-			':link' => $data['link']
+			':parent' => $data['parent']
 		];
 
 		$query->execute($data);

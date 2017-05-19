@@ -15,7 +15,7 @@ if ($node === false) {
 }
 
 if ($data->delete($_GET['id'])) {
-	header ("Location: /treeproj/public");
+	header ("Location: /ideotree/public");
 	exit;
 } else {
 	echo "An error occurred.";

@@ -58,7 +58,6 @@ li.child {
 	font-size:14px;
 }
 
-a > span.glyphicon-pencil {
-	color:#575757;
+a > span.glyphicon-chevron-right {
 	margin-bottom: 8px;
 }

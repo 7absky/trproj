@@ -1,14 +1,23 @@
+<?php
+    $labels = $this->labels;
+?>
 <h2> Nowa kategoria </h2>
 <form action="add.php" method="POST">
 	<label>
 		Nazwa : <input type="text" name="label">
 	</label>
 	<br>
-	<input type="hidden" name="parent" value="0">
-	<br>
-	<label>
-		Odnośnik: <input type="text" name="link">
-	</label>
+    <label>
+        Rodzic:
+        <select name="parent">
+            <option value="0">Kategoria główna</option>
+            <?php
+            foreach($labels as $label) {
+                echo "<option value='".$label['id']."'>".$label['label']."</option>";
+            }
+            ?>
+        </select>
+    </label>
 	<br>
 	<br>
 	<input type="submit" value="Dodaj węzeł" class="btn btn-primary">

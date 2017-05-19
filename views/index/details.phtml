@@ -10,6 +10,15 @@ $node = $this->node;
         <a href="edit.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-primary">Edycja</a>
         <a href="delete.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-danger">Usuń</a>
     </h3>
-    <?=$tree;?>
+
+    <?php
+        if (empty($tree)) {
+            echo $node['label']." nie posiada jeszcze żadnych podkategorii.";
+            echo "Możesz dodać podkategorię "."<a href='/ideotree/public/add.php'>TUTAJ</a>";
+        } else {
+            echo "Podkategorie :" . "<br>";
+            echo $tree;
+        }
+    ?>
 </div>
 
