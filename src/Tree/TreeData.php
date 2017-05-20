@@ -13,7 +13,7 @@ class TreeData {
 	}
 
 	public function getAllNodes () {
-		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY label, parent, sort");
+		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY label, parent");
 		$query->execute();
 
 		return $query;

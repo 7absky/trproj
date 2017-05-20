@@ -31,7 +31,7 @@ li input + ul {
 	height: 1em;
 }
 li input + ul > li { 
-	display: none; 
+	display: none;
 	margin-left: -14px !important; 
 	padding-left: 1px; 
 }
@@ -60,4 +60,5 @@ li.child {
 
 a > span.glyphicon-chevron-right {
 	margin-bottom: 8px;
+
 }

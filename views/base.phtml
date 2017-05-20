@@ -4,7 +4,7 @@
 		<title>ProjectApp</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="tree.css">
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
@@ -12,13 +12,14 @@
 	        <div class="container-fluid">
 	            <div class="navbar-header">
 	                <a class="navbar-brand" href="/ideotree/public">Lista kategorii</a>
-	                <form class="navbar-form navbar-right" role="search">
-					    <a href="add.php" class="btn btn-default">
-					        <span class="glyphicon glyphicon-plus-sign"></span>
-					        Nowa kategoria
-					    </a>
-					</form>
 	            </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <a href="add.php" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus-sign"></span>
+                        Nowa kategoria
+                    </a>
+                </form>
+                <button type="button" id="checkall" class="btn btn-default navbar-btn">Zwiń/rozwiń</button>
 	        </div>
     	</nav>
     	<div class="container-fluid">
@@ -26,5 +27,12 @@
              <?php $this->content(); ?>
 		</div>
 
+        <script>
+            $('#checkall').click(function(){
+                var d = $(this).data(); // access the data object of the button
+                $(':checkbox').prop('checked', !d.checked); // set all checkboxes 'checked' property using '.prop()'
+                d.checked = !d.checked; // set the new 'checked' opposite value to the button's data object
+            });
+        </script>
 	</body>
 </html>
