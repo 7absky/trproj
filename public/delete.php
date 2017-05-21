@@ -1,5 +1,10 @@
 <?php 
 require '../src/Tree/Autoloader.php';
+require_once '../src/Tree/Config.php';
+\Tree\Config::setDirectory('../config');
+
+$config = \Tree\Config::get('autoload');
+require_once  $config['class_path'] . '/Tree/Autoloader.php';
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
 	echo "You did not pass an ID.";

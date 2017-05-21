@@ -1,7 +1,10 @@
+<?php
+$config = \Tree\Config::get('site');
+?>
 <!doctype html>
 <html>
 	<head>
-		<title>ProjectApp</title>
+		<title><?=$config['title'];?></title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="tree.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,7 +14,7 @@
 		<nav class="navbar navbar-default" role="navigation">
 	        <div class="container-fluid">
 	            <div class="navbar-header">
-	                <a class="navbar-brand" href="/ideotree/public">Lista kategorii</a>
+	                <a class="navbar-brand" href="/ideotree/public"><?=$config['title'];?></a>
 	            </div>
 	        </div>
     	</nav>

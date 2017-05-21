@@ -5,7 +5,8 @@ class TreeData {
 	protected $connection;
 
 	public function connect () {
-		$this->connection = new \PDO("mysql:host=localhost;dbname=ideo", "root","root");
+	    $config = \Tree\Config::get('database');
+		$this->connection = new \PDO("mysql:host=".$config['hostname'].";dbname=" .$config['dbname'], $config['username'], $config['password']);
 	}
 
 	public function __construct() {

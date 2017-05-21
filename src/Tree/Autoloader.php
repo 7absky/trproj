@@ -21,3 +21,4 @@ class Autoloader {
 
 $loader = new Autoloader();
 $loader->register();
+
