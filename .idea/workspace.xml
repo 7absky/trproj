@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe355af-633c-4a40-8b6d-539341946156" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/tree.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index/details.phtml" afterPath="$PROJECT_DIR$/views/index/details.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5458305">
+    <splitter split-orientation="horizontal" split-proportion="0.47760165">
       <split-first>
         <leaf>
           <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
@@ -93,7 +93,7 @@
             <entry file="file://$PROJECT_DIR$/views/index/index.phtml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="585">
-                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -116,8 +116,8 @@
           <file leaf-file-name="tree.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/tree.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state relative-caret-position="495">
+                  <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -145,8 +145,8 @@
           <file leaf-file-name="details.phtml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index/details.phtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="102" lean-forward="false" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="257" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
                   <folding />
                 </state>
               </provider>
@@ -183,7 +183,6 @@
         <option value="$PROJECT_DIR$/public/delete.php" />
         <option value="$PROJECT_DIR$/public/edit.php" />
         <option value="$PROJECT_DIR$/views/index/add.phtml" />
-        <option value="$PROJECT_DIR$/views/index/details.phtml" />
         <option value="$PROJECT_DIR$/views/index/edit.phtml" />
         <option value="$PROJECT_DIR$/public/js/tree.js" />
         <option value="$PROJECT_DIR$/views/base.phtml" />
@@ -191,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/Tree/TreeData.php" />
         <option value="$PROJECT_DIR$/public/tree.php" />
         <option value="$PROJECT_DIR$/views/index/index.phtml" />
+        <option value="$PROJECT_DIR$/views/index/details.phtml" />
       </list>
     </option>
   </component>
@@ -393,18 +393,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495178847690</updated>
-      <workItem from="1495178849462" duration="50616000" />
+      <workItem from="1495178849462" duration="51299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50616000" />
+    <option name="totallyTimeSpent" value="51299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1666" y="-158" width="1690" height="1008" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14142011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14142011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -640,14 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/base.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -664,18 +656,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index/details.phtml">
+    <entry file="file://$PROJECT_DIR$/views/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="102" lean-forward="false" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="257" />
+        <state relative-caret-position="585">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index/index.phtml">
+    <entry file="file://$PROJECT_DIR$/public/tree.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index/details.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
           <folding />
         </state>
       </provider>
