@@ -4,21 +4,33 @@ $tree = $this->tree;
 $node = $this->node;
 ?>
 
+
 <div class="container">
     <h3 class="page-header">
-        <?=$node['label'];?>
-        <a href="edit.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-primary">Edycja</a>
-        <a href="delete.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-danger">Usuń</a>
+        Kategoria : <?=$node['label'];?>
     </h3>
 
-    <?php
-        if (empty($tree)) {
-            echo $node['label']." nie posiada jeszcze żadnych podkategorii.";
-            echo "Możesz dodać podkategorię "."<a href='/ideotree/public/add.php'>TUTAJ</a>";
-        } else {
-            echo "Podkategorie :" . "<br>";
-            echo $tree;
-        }
-    ?>
+    <div class="row">
+        <div class="col-md-6">
+        <?php
+            if (empty($tree)) {
+                echo $node['label']." nie posiada jeszcze żadnych podkategorii.";
+                echo "Możesz dodać podkategorię "."<a href='/ideotree/public/add.php'>TUTAJ</a>";
+            } else {
+                echo "Podkategorie :" . "<br>";
+                echo $tree;
+            }
+        ?>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="edit.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-primary">Edytuj</a>
+                    <a href="delete.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-danger">Usuń</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 

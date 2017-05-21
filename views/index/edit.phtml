@@ -3,25 +3,35 @@ $node = $this->node;
 $labels = $this->labels;
 ?>
 
-<h2> Edit node </h2>
-<form action="edit.php" method="POST">
+<h3 class="page-header"> Edycja kategorii</h3>
+<form action="edit.php" method="POST" >
 	<label>
 		Title: <input type="text" name="label" value="<?=$node['label'];?>">
 	</label>
 	<br>
+    <label>
+        <input type="checkbox"> Chcę przenieść ten węzeł
+    </label>
+    <br>
 	<label>
 		Rodzic:
         <select name="parent">
+            <option selected disabled>Zmień</option>
+            <option value="0">Kategoria główna (root)</option>
             <?php
                 foreach($labels as $label) {
-                   echo "<option value='".$label['id']."'>".$label['label']."</option>";
+                    if ($label['label'] == $node['label']) { // child cannot be its parent at the same time
+                        continue;
+                    } else {
+                        echo "<option value='".$label['id']."'>".$label['label']."</option>";
+                    }
                 }
             ?>
-            <option value="0">Kategoria główna</option>
         </select>
 	</label>
 	<br>
+    <br>
 	<input type="hidden" name="id" value="<?=$node['id'];?>">
-	<input type="submit" value="Edytuj węzeł" class="btn btn-primary">
-	<a href="/ideotree/public" role="button" class="btn btn-warning">Powrót</a>
+	<input type="submit" value="Edytuj węzeł" class="btn btn-xs btn-primary">
+	<a href="/ideotree/public" role="button" class="btn btn-xs btn-warning">Powrót</a>
 </form>
