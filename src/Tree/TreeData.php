@@ -13,6 +13,10 @@ class TreeData {
 		$this->connect();
 	}
 
+	public function e ($value) {
+	    return htmlspecialchars($value,ENT_QUOTES,'UTF-8');
+    }
+
 	public function getAllNodes () {
 		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY label, parent");
 		$query->execute();
@@ -54,8 +58,8 @@ class TreeData {
 		);
 
 		$data = [
-			':label' => $data['label'],
-			':parent' => $data['parent']
+			':label' => $this->e($data['label']),
+			':parent' => $this->e($data['parent'])
 		];
 
 		$query->execute($data);

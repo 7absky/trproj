@@ -1,5 +1,4 @@
 <?php
-require '../src/Tree/Autoloader.php';
 require_once '../src/Tree/Config.php';
 \Tree\Config::setDirectory('../config');
 
