@@ -18,7 +18,7 @@ class TreeData {
     }
 
 	public function getAllNodes () {
-		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY label, parent");
+		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY id, parent");
 		$query->execute();
 
 		return $query;
