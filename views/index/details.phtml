@@ -26,8 +26,9 @@ $node = $this->node;
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <a href="edit.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-primary">Edytuj</a>
-                    <a href="delete.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-danger">Usuń</a>
+                    <button type="button" id="checkall" class="btn btn-xs btn-default">Zwiń/rozwiń drzewo</button>
+                    <a href="edit.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-primary" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-title="Edycja" data-content="Zmiana nazwy i przenoszenie węzła">Edytuj</a>
+                    <a href="delete.php?id=<?=$nodeId;?>" role="button" class="btn btn-xs btn-danger" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-title="Na pewno?" data-content="Ta operacja jest nieodwracalna!">Usuń</a>
                 </div>
             </div>
         </div>

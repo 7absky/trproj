@@ -10,13 +10,13 @@ $labels = $this->labels;
 	</label>
 	<br>
     <label>
-        <input type="checkbox"> Chcę przenieść ten węzeł
+        <input type="checkbox" id="enable_select"> Chcę przenieść ten węzeł
     </label>
     <br>
 	<label>
 		Rodzic:
-        <select name="parent">
-            <option selected disabled>Zmień</option>
+        <select name="parent" id="parent">
+            <option>Zmień</option>
             <option value="0">Kategoria główna (root)</option>
             <?php
                 foreach($labels as $label) {

@@ -5,6 +5,8 @@ namespace Tree;
 
 class TreeStructure
 {
+    // function that works recursively (showChildren function is implemented in order to make tree styling easier)
+    // and builds treeview
     public function buildTreeView ($parent, $category) {
         $html = "";
         if (isset($category['parent_cats'][$parent])) {

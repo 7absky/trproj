@@ -26,7 +26,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 $data = new \Tree\TreeData();
 $node = $data->getNode($_GET['id']);
-$labels = $data->getLabels();
+$labels = $data->getLabels(); // labels for select field
 if ($node === false) {
     echo "Nie znaleziono takiego węzła";
     exit;

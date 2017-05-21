@@ -10,7 +10,7 @@
     <label>
         Rodzic:
         <select name="parent">
-            <option value="0">Kategoria główna (root)</option>
+            <option value="0">Kategoria główna (root)</option> // enable adding new node to the root category
             <?php
             foreach($labels as $label) {
                 echo "<option value='".$label['id']."'>".$label['label']."</option>";

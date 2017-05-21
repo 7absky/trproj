@@ -13,11 +13,13 @@ class TreeData {
 		$this->connect();
 	}
 
+	// very simple xss attack protection
 	public function e ($value) {
 	    return htmlspecialchars($value,ENT_QUOTES,'UTF-8');
     }
 
 	public function getAllNodes () {
+	    // select all rows from menus table
 		$query = $this->connection->prepare("SELECT * FROM menus ORDER BY id, parent");
 		$query->execute();
 
@@ -31,14 +33,17 @@ class TreeData {
     }
 
 	public function makeCategoryArray ($query) {
+	    // create a multidimensional array which holds categories and parents ids
 		$category = array(
 			'categories' => array(),
 			'parent_cats' => array()
 		);
 
+		// inserting data from database to category array
 		while($row = $query->fetch(\PDO::FETCH_ASSOC)) {
+		    // inserts current row's category id into an array
 			$category['categories'][$row['id']] = $row;
-
+            // parent_cats array contains list of categories which have children
 			$category['parent_cats'][$row['parent']][] = $row['id'];
 		}
 
@@ -79,6 +84,7 @@ class TreeData {
 		return $query->execute($data);
 	}
 
+	// fetch single node from database
 	public function getNode ($id) {
 		$sql= "SELECT * FROM menus WHERE id = :id LIMIT 1";
 		$query = $this->connection->prepare($sql);
@@ -100,9 +106,9 @@ class TreeData {
 		);
 
 		$data = [
-			':id' => $data['id'],
-			':label' => $data['label'],
-			':parent' => $data['parent']
+			':id' => $this->e($data['id']),
+			':label' => $this->e($data['label']),
+			':parent' => $this->e($data['parent'])
 		];
 
 		return $query->execute($data);

@@ -6,9 +6,10 @@ $config = \Tree\Config::get('site');
 	<head>
 		<title><?=$config['title'];?></title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="tree.css">
+		<link rel="stylesheet" type="text/css" href="css/tree.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/tree.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default" role="navigation">
@@ -24,11 +25,27 @@ $config = \Tree\Config::get('site');
 		</div>
 
         <script>
+            // function handling tree collapse
             $('#checkall').click(function(){
                 var d = $(this).data(); // access the data object of the button
                 $(':checkbox').prop('checked', !d.checked); // set all checkboxes 'checked' property using '.prop()'
                 d.checked = !d.checked; // set the new 'checked' opposite value to the button's data object
             });
+
+            // enable bootstrap popovers
+            $('[data-toggle="popover"]').popover();
+
+
+            // enable select field only when checkbox is checked
+            var enable_field = function() {
+                if ($('#enable_select').is(":checked")) {
+                    $('#parent').prop('disabled', false);
+                } else {
+                    $('#parent').prop('disabled','disabled');
+                }
+            };
+            $(update_field);
+            $('#enable_select').change(enable_field);
         </script>
 	</body>
 </html>
