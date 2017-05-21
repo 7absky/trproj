@@ -26,6 +26,18 @@ class TreeData {
 		return $query;
 	}
 
+    public function getSortedNodes ($param, $sort) {
+        // select all rows from menus table
+        $query = $this->connection->prepare("SELECT * FROM menus ORDER BY {$param} {$sort}");
+        $data = [
+            ':param' => $this->e($param),
+            ':sort' => $this->e($sort)
+        ];
+        $query->execute($data);
+
+        return $query;
+    }
+
 	public function getLabels () {
 	    $query = $this->connection->prepare("SELECT id, label FROM menus ORDER BY label");
 	    $query->execute();
